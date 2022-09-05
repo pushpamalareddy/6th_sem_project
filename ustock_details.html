@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+
+    <style>
+        .form {
+      position: relative;
+      z-index: 1;
+      background:white;
+      max-width: 360px;
+      margin-left: 46% !important;
+      margin: 0 auto 100px;
+      padding: 45px;
+      text-align: center;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      border-radius:30px;
+    }
+    .form input {
+      font-family:"times new roman" ;
+      outline: 0;
+      background: #f2f2f2;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 20px;
+      border-radius:30px;
+    }
+    
+    label{
+    font-family: "times new roman";
+    font-size: 20px;
+      outline: 0;
+      width: 100%;
+      border: 0;
+      font-weight:bold;
+      margin: 0 0 15px;
+      padding: 15px;
+    }
+    
+    h1{
+    margin-left:15%
+    }
+    </style>
+
+</head>
+<body bgcolor="cadetblue">
+   <div class="container">
+       <div class="nav">
+           <ul>
+            <li>
+                <a href="#">
+                <span class="title"><h2>DASHBOARD</h2></span>
+                </a>
+            </li>
+               <li>
+                   <a href="/home">
+                   <span class="title"><h2>Home</h2></span>
+                   </a>
+               </li>
+               <li>
+                <a href="/customer_details">
+                <span class="title"><h2>Company Details</h2></span>
+            </a>
+            </li>
+            <li>
+                <a href="/ucustomer_details">
+                <span class="title"><h2> Update Company Details</h2></span>
+            </a>
+            </li>
+            <li>
+                <a href="/order">
+                <span class="title"><h2> Order Details</h2></span>
+            </a>
+            </li>
+            <li>
+                <a href="/stock_details">
+                <span class="title"><h2>Stock Details</h2></span>
+            </a>
+            </li>
+            <li>
+                <a href="/ustock_details">
+                <span class="title"><h2>Update Stock Details</h2></span>
+            </a>
+            </li>
+
+            <li>
+                <a href="/stock_analysis">
+                <span class="title"><h2>Stock Analysis</h2></span>
+            </a>
+            </li>
+            <li>
+                <a href="/">
+                <span class="title"><h2>Logout</h2></span>
+            </a>
+            </li>
+           </ul>
+       </div>
+   </div> 
+   
+   <center><h1>Delete stock Details</h1></center>
+   <br>
+   <div class="container1" align="center">
+    <div class="form">
+      <form class="login-form" action="/ustock_details" method="post">
+	    <label>Company Id</label>
+        <input type="text" name=companyid id="companyid" ><br><br>
+		<label>Date</label>
+        <input type="date" name=date id="date" ><br><br>
+        <input type="submit" class="btn" value="Delete">
+        
+      </form>
+      </div>
+	  </div>
+
+
+</body>
+</html>
